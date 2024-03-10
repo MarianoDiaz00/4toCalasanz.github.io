@@ -8,12 +8,12 @@
     
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      text-align: left;
       color: rgb(255, 255, 255);
       margin: 0;
       padding: 0;
       background: url('logocala.png');
-      background-size:contain;
+      background-size: auto;
       background-color: #000000;
     }
 
@@ -39,7 +39,40 @@
     .container {
       max-width: 800px;
       margin: 20px auto;
-      padding: 0 20px;
+      padding: 20px; /* Añade espacio alrededor del contenedor */
+      background-color: #ee650a; /* Color de fondo para el contenedor */
+      border-radius: 10px; /* Añade esquinas redondeadas al contenedor */
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #ffffff;
+      background-color: #7d252a;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    p strong {
+      background-color: #b35252;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #7d252a;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #a93237;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ffffff;
     }
     
   </style>
@@ -54,20 +87,26 @@
     <a href="descargas.html"><strong>Descargas</strong></a>
   </nav>
   <div class="container">
-    <!--Esto contiene informacion que va en el el centro de la pagina-->
-    <section id="Seccion Descargas">
+    <section>
       <h2>DESCARGAS</h2>
-      <p>En esta seccion encontraran distintos archivos necesarios</p>
-      <p> </p>
+      <p>En esta sección encontrarán distintos archivos necesarios para la materia.</p>
     </section>
-  </div>
-  <p><strong> GUIAS DE EJERCICIOS </strong></p>
-  <p>Guias 1,2 y 3</p>
-  <button onclick="window.location.href= 'https://github.com/MarianoDiaz00/4toCalasanz.github.io/raw/main/Guía de ejercicios.pdf'">Descargar</button>
+    
+    <p><strong>GUIAS DE EJERCICIOS</strong></p>
+    <button onclick="window.location.href= 'https://github.com/MarianoDiaz00/4toCalasanz.github.io/raw/main/Guía de ejercicios.pdf'">Guias 1-2-3</button>
   
+    <hr>
+    
+    <p><strong>PROGRAMA</strong></p>
+    <button onclick="window.location.href= 'https://github.com/MarianoDiaz00/4toCalasanz.github.io/raw/main/logocala.png'">No disponible</button>
 
-  <p><strong>PROGRAMA</strong></p>
-  <p>Programa de la materia</p>
+    <hr>
 
+    <p><strong>DIAPOSITIVAS</strong></p>
+    <button onclick="window.location.href= 'https://github.com/MarianoDiaz00/4toCalasanz.github.io/raw/main/logocala.png'">No disponible</button>
+
+  </div>
 </body>
 </html>
+
+

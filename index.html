@@ -13,7 +13,7 @@
       margin: 0;
       padding: 0;
       background: url('logocala.png');
-      background-size:contain;
+      background-size:auto;
       background-color: #000000;
     }
     header {
@@ -40,6 +40,21 @@
       margin: 20px auto;
       padding: 0 20px;
     }
+    .section-container {
+      background-color: #b35252;
+      padding: 20px;
+      margin-top: 80px;
+      border-radius: 10px;
+      text-align: left; /* Alineación del texto a la izquierda */
+    }
+    .section-container h2 {
+      color: #ffffff;
+      margin-bottom: 10px; /* Espaciado inferior para separar los títulos de los párrafos */
+    }
+    .section-container p {
+      color: #ffffff;
+      margin-bottom: 15px; /* Espaciado inferior para separar los párrafos */
+    }
 
   </style>
 </head>
@@ -53,12 +68,14 @@
     <a href="descargas.html"><strong>Descargas</strong></a>
   </nav>
   <div class="container">
-    <!--Esto contiene informacion que va en el el centro de la pagina-->
-    <section id="presentacion">
+    <div class="section-container">
       <h2>¡Bienvenidos!</h2>
-      <p>Esta es la pagina principal que se usara en la materia para los alumnos de 4to año. Aquí encontrarán las diapositivas de las clases, sus tareas y guias de ejercicios. </p>
-      <p>En el menu superior podran dirigirse a la seccion que necesiten. </p>
-    </section>
+      <p>Esta es la página principal que se usará en la materia para los alumnos de 4to año. Aquí encontrarán información importante sobre el curso.</p>
+      <p>Esta página es exclusiva para los alumnos. Podrán utilizarla para subir tareas, descargar material para las clases y acceder a presentaciones realizadas por el docente.</p>
+      <p>Cualquier duda será respondida únicamente en clase. Los alumnos deberán realizar los ejercicios en las computadoras del laboratorio de informática o en papel durante las clases.</p>
+      <p>En la sección "Orden de Clases" encontrarán la distribución de los temas y lo que se abordará en cada clase.</p>
+      <p>En la sección de "Descargas" encontrarán guías de ejercicios, el programa de la materia, diapositivas utilizadas en clase y otros materiales de lectura necesarios.</p>
+    </div>
   </div>
 </body>
 </html>
