@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnologías de la Información 2024</title>
-  <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: rgb(255, 255, 255);
-      margin: 0;
-      padding: 0;
-      background: url('logocala.png');
-      background-size:auto;
-     
-    }
-    header {
-      background-color: #7d252a;
-      color: #ffffff;
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #f1670adc;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #000000;
-      text-decoration: none;
-      padding: 10px 20px;
-    }
-    nav a:hover {
-      background-color: #7d25298a;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    .section-container {
-      background-color: #b35252;
-      padding: 20px;
-      margin-top: 80px;
-      border-radius: 10px;
-      text-align: left; /* Alineación del texto a la izquierda */
-    }
-    .section-container h2 {
-      color: #ffffff;
-      margin-bottom: 10px; /* Espaciado inferior para separar los títulos de los párrafos */
-    }
-    .section-container p {
-      color: #ffffff;
-      margin-bottom: 15px; /* Espaciado inferior para separar los párrafos */
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías de la Información - Python</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Tecnologías de la Información 2024</h1>
-  </header>
-  <nav>
-    <a href="index.html"><strong>Inicio</strong></a>
-    <a href="OrdenDeClases.html"><strong>Apuntes</strong></a>
-    <a href="descargas.html"><strong>Descargas</strong></a>
-  </nav>
-  <div class="container">
-    <div class="section-container">
-      <h2>¡Bienvenidos!</h2>
-      <p>Esta es la página principal que se usará en la materia para los alumnos de 4to año. Aquí encontrarán información importante sobre el curso.</p>
-      <p>Esta página es exclusiva para los alumnos. Podrán utilizarla para subir tareas, descargar material para las clases y acceder a presentaciones realizadas por el docente.</p>
-      <p>Cualquier duda será respondida únicamente en clase. Los alumnos deberán realizar los ejercicios en las computadoras del laboratorio de informática o en papel durante las clases.</p>
-      <p>En la sección <strong>Apuntes</strong> encontrarán el drive de la materia y otros materiales de lectura necesarios.</p>
-      <p>En la sección de <strong>Descargas</strong> encontrarán guías de ejercicios, el programa de la materia, diapositivas utilizadas en clase.</p>
+
+    <!-- Botón para abrir el menú -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <!-- Menú desplegable lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+        <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+        <a href="#descargas" onclick="toggleMenu()">Descargas</a>
+        <a href="#programa" onclick="toggleMenu()">Programa</a>
     </div>
-  </div>
+
+    <header>
+        <h1>Tecnologías de la Información</h1>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenidos al curso</h2>
+        <p>Este curso de <b>Tecnologías de la Información</b> está diseñado para introducir a los estudiantes en la programación con Python.</p>
+    </section>
+
+    <section id="descargas">
+        <h2>Recursos y Descargas</h2>
+        <ul>
+            <li><a href="https://www.python.org/downloads/" target="_blank">Descargar Python</a></li>
+            <li><a href="https://code.visualstudio.com/" target="_blank">Descargar Visual Studio Code</a></li>
+            <li><a href="https://docs.python.org/es/3/tutorial/" target="_blank">Guía oficial de Python</a></li>
+        </ul>
+    </section>
+
+    <section id="programa">
+        <h2>Programa de la Materia</h2>
+    
+        <h3>📌 Asignatura: Tecnologías de la Información</h3>
+        <p><b>Profesor:</b> Mariano Díaz</p>
+        <p><b>Curso:</b> 4° H-C-E - Año 2025</p>
+    
+        <h3>📖 Unidades y Contenidos</h3>
+    
+        <ul>
+            <li><b>Unidad 1:</b> Introducción a la programación.</li>
+            <p>Pseudocódigo: Algoritmos y diagramas de flujo. Definición de variables y constantes. Tipos de datos: Integer, string, bool, float.</p>
+            
+            <li><b>Unidad 2:</b> Logica computacional</li>
+            <p>Operadores matemáticos, lógicos y funciones internas. Palabras reservadas del lenguaje. Programacion secuencial</p>
+    
+            <li><b>Unidad 3:</b> Secuencias, condicionales y bucles.</li>
+            <p>Condicionales simples y múltiples: IF-ELIF-ELSE. Estructuras repetitivas: WHILE - FOR. Funciones. Listas, tuplas, diccionarios.</p>
+    
+            <li><b>Unidad 4:</b> Interfaces y archivos.</li>
+            <p>Interfaces gráficas con Tkinter. Manejo y procesamiento de archivos.</p>
+        </ul>
+    
+        <h3>📑 Criterios de Evaluación</h3>
+        <ul>
+            <li>Aprobación de exámenes escritos y orales.</li>
+            <li>Entrega y evaluación de trabajos prácticos.</li>
+        </ul>
+    
+        <h3>📚 Bibliografía Obligatoria</h3>
+        <ul>
+            <li><i>Python para principiantes</i>, Programming Languages Academy.</li>
+        </ul>
+    
+        <h3>📖 Bibliografía de Consulta</h3>
+        <ul>
+            <li><i>Python 3 - Curso práctico</i>, Alberto Cuevas Álvarez.</li>
+        </ul>
+    
+        <h3>📂 Acceso a Google Drive</h3>
+        <p>Puedes acceder a los materiales en el siguiente enlace:</p>
+        <a href="https://drive.google.com/drive/folders/1pRNa7U1VK3xtxFdH9mZBN1zRWZBJsrmn?usp=sharing" target="_blank" class="btn">Acceder al Drive</a>
+    </section>    
+
+    <footer>
+        <p>&copy; 2025 Tecnologías de la Información</p>
+    </footer>
+
 </body>
 </html>
